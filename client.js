@@ -7,7 +7,8 @@ const connect = function() {
   });
   conn.setEncoding("utf8");
   conn.on('connect', () => {
-    console.log('Connected to server.');
+    console.log('Successfully connected to game server.');
+    conn.write('Name: TCD');
   });
   conn.on('ready', () => {
     console.log('Socket is ready to be used.');

@@ -1,25 +1,30 @@
-const { MESSAGES } = require('./constants');
+const { ENCODING, MESSAGES } = require('./constants');
 
+// Stores the active TCP connection object
 let connection;
 
+/**
+ * Allows our client to listen for keyboard input and react to it.
+ * @param {Object} conn - An object representing a connection made with the server. It contains the .write() method, which allows us to send messages to the server based on the keyboard input.
+ * @returns {Object} stdin - Returns a `process.stdin` object, which allows us to listen for keyboard input and react to it.
+ */
 const setupInput = function(conn) {
-  // The conn parameter is an object that is created by connection() in client.js.
-  // The object is then assigned to the connection variable.
-  // It is used by the event handler function (handleUserInput()) to write to the server.
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
-  stdin.setEncoding('utf8');
+  stdin.setEncoding(ENCODING);
   stdin.resume();
   stdin.on('data', handleUserInput);
-  // The stdin object that is returned below allows us to listen for keyboard events and handle them.
   return stdin;
 };
 
-//  Event handler function
+/**
+ * The `data` callback handler for the `stdin` object in setupInput().
+ * @param {string} key The key pressed by the user and received by stdin.
+ */
 const handleUserInput = function(key) {
   if (key === '\u0003') {
-    console.log('Exiting game.');
+    console.log('Exited game.');
     process.exit();
   } else if (key in MESSAGES) {
     connection.write(MESSAGES[key]);

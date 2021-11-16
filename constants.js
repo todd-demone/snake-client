@@ -1,5 +1,6 @@
 const IP = 'localhost';
 const PORT = 50541;
+const ENCODING = 'utf8';
 const INITIALS = 'TCD';
 const MESSAGES = {
   w: 'Move: up',
@@ -10,9 +11,4 @@ const MESSAGES = {
   b: 'Say: Gotta run. Bye!',
 };
 
-module.exports = {
-  IP,
-  PORT,
-  INITIALS,
-  MESSAGES
-};
+module.exports = { IP, PORT, ENCODING, INITIALS, MESSAGES };

@@ -4,10 +4,6 @@ let connection;
 
 const setupInput = function(conn) {
   // The conn parameter is an object that is created by connection() in client.js.
-<<<<<<< HEAD
-  // and passed in to setupInput in the play.js file.
-=======
->>>>>>> 81fd1afee41310bee0178b384e47d832de376d54
   // The object is then assigned to the connection variable.
   // It is used by the event handler function (handleUserInput()) to write to the server.
   connection = conn;

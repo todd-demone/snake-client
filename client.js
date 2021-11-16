@@ -22,8 +22,9 @@ const connect = function() {
   });
   conn.on('end', () => {
     console.log('Server has signaled end of transmission.');
+    process.exit();
   });
   return conn;
 };
 
-module.exports = connect;
+module.exports = { connect };

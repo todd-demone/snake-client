@@ -1,8 +1,6 @@
 # Snake Client Project
 
-Snake game is a very popular video game. It is a video game concept where the player maneuvers a dot and grows it by ‘eating’ pieces of food. As it moves and eats, it grows and the growing snake becomes an obstacle to smooth maneuvers. The goal is to grow it to become as big as possible without bumping into the side walls, or bumping into itself, upon which it dies.
-
-This is simply a multiplayer take on the genre.
+Snake game is a very popular video game. This is simply a multiplayer take on the genre.
 
 Before you can run this client, you will need to be running the server side which you can download and install from [here](https://github.com/lighthouse-labs/snek-multiplayer). 
 
@@ -16,7 +14,17 @@ Screenshot of client terminal:
 ## Getting Started
 
 - Follow steps inside the [snek server repo](https://github.com/lighthouse-labs/snek-multiplayer) to run the server side.
-- Run the development snake client using the `node play.js` command.
+- Clone and run the snake client side using the following commands:
+```
+git clone https://github.com/todd-demone/snake-client.git
+cd snake-client
+node play.js
+```
+
+## Instructions
+- Move the snake using the keyboard controls (described below) and eat the red dots.
+- Each time the snake eats a red dot it grows. The goal is to grow it as big as possible without dying.
+- The snake dies if it collides with the wall, its own tail or another snake.
 
 ## Keyboard controls:
   - `w` `a` `s` `d` - move up, left, down, right

@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 Server screenshot:
-!["snake-server-screenshot"](https://user-images.githubusercontent.com/17071349/142232028-fb5ec8ba-722a-42db-917f-df18e21baf98.png)
+!["snake-server-screenshot"](https://user-images.githubusercontent.com/17071349/142240185-ca2aaf43-6ecd-46be-a762-08b4e612c856.png)
 Screenshot of client terminal:
 !["snake-client-screenshot"](https://user-images.githubusercontent.com/17071349/142238196-85ce65fe-50b0-4fad-b172-b3786e011803.png)
 
@@ -19,11 +19,14 @@ Screenshot of client terminal:
 - Run the development snake client using the `node play.js` command.
 
 ## Keyboard controls:
-  - `w` - move up
-  - `a` - move left
-  - `s` - move down
-  - `d` - move right
+  - `w` `a` `s` `d` - move up, left, down, right
   - `g` - say hi to the other players
   - `b` - say bye to the other players
-  - `Ctrl-c` - exit from the game
+  - `Ctrl` + `c` - exit from the game
 
+## Dependencies
+- Node 12.x or above
+- npm 6.x or above
+
+## Author
+- Todd Demone

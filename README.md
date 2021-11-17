@@ -4,6 +4,9 @@ Snake game is a very popular video game. This is simply a multiplayer take on th
 
 Before you can run this client, you will need to be running the server side which you can download and install from [here](https://github.com/lighthouse-labs/snek-multiplayer). 
 
+## Purpose
+This game was created by [me](https://github.com/todd-demone) while completing the [Lighthouse Labs](https://github.com/lighthouse-labs) [Web Development Flex Program](https://www.lighthouselabs.ca/en/web-development-flex-program).
+
 ## Final Product
 Server screenshot:
 !["snake-server-screenshot"](https://user-images.githubusercontent.com/17071349/142240185-ca2aaf43-6ecd-46be-a762-08b4e612c856.png)
@@ -38,3 +41,6 @@ node play.js
 
 ## Author
 - Todd Demone
+
+## Acknowledgements
+The [snek server](https://github.com/lighthouse-labs/snek-multiplayer) was inspired and started from [snek](https://github.com/taniarascia/snek), made by [Tania Rascia](https://www.taniarascia.com/).

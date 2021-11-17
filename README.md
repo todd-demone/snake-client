@@ -10,6 +10,9 @@ Server screenshot:
 Screenshot of client terminal:
 !["snake-client-screenshot"](https://user-images.githubusercontent.com/17071349/142238196-85ce65fe-50b0-4fad-b172-b3786e011803.png)
 
+## Dependencies
+- Node 12.x or above
+- npm 6.x or above
 
 ## Getting Started
 
@@ -31,10 +34,6 @@ node play.js
   - `g` - say hi to the other players
   - `b` - say bye to the other players
   - `Ctrl` + `c` - exit from the game
-
-## Dependencies
-- Node 12.x or above
-- npm 6.x or above
 
 ## Author
 - [Todd Demone](https://github.com/todd-demone)

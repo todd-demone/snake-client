@@ -9,11 +9,11 @@ const connect = function() {
   const conn = net.createConnection({ host: IP, port: PORT });
   conn.setEncoding(ENCODING);
   conn.on('connect', () => {
-    console.log('Connected to game server.');
+    console.log('Successfully connected to game server.');
     conn.write(`Name: ${INITIALS}`);
   });
   conn.on('data', (data) => {
-    console.log(`Game server says ${data}`);
+    console.log(`Server says ${data}`);
   });
   conn.on('end', () => {
     console.log('Disconnected from game server.');

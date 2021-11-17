@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["snake-server-screenshot"](snake-server-screenshot2.png)
-!["snake-client-screenshot"](snake-client-screenshot2.png)
+!["snake-server-screenshot"](https://user-images.githubusercontent.com/17071349/142232028-fb5ec8ba-722a-42db-917f-df18e21baf98.png)
+!["snake-client-screenshot"](https://user-images.githubusercontent.com/17071349/142232039-b3e6f9a7-e8ec-48ee-ba0b-16205b0f467b.png)
 
 
 ## Getting Started

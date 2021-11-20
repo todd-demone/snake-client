@@ -3,7 +3,7 @@ const { ENCODING, MESSAGES, MOVEMENTS } = require('./constants');
 // Stores the active TCP connection object
 let connection;
 let intervalId;
-const speed = 120;
+const speed = 150;
 
 /**
  * Allows our client to listen for keyboard input and react to it.

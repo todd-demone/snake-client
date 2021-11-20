@@ -1,9 +1,9 @@
 const { ENCODING, MESSAGES, MOVEMENTS } = require('./constants');
 
 // Stores the active TCP connection object
-let connection;
-let intervalId;
-const speed = 150;
+let connection; // connection object needs to be global because it is accessed by both setupInput() and handleUserInput().
+let intervalId; // code to stop setInterval() in handleUserInput().
+const speed = 150; // interval time for setInterval().
 
 /**
  * Allows our client to listen for keyboard input and react to it.
